@@ -25,12 +25,12 @@ func main() {
 						protected.DELETE("/users/:id", controller.DeleteUser)
 
 						// PreorderList Routes
-						protected.GET("/preorderlists/:id", controller.ListPreorderLists)
+						protected.GET("/preorderlists/:id", controller.ListPreorders)
 						//protected.GET("/preorderlist", controller.ListPreorderLists)
-						protected.GET("/preorderlist/:id", controller.GetPreorderList)
-						protected.POST("/preorderlists", controller.CreatePreorderList)
-						protected.PATCH("/preorderlists", controller.UpdatePreorderList)
-						protected.DELETE("/preorderlists/:id", controller.DeletePreorderList)
+						protected.GET("/preorderlist/:id", controller.GetPreorder)
+						protected.POST("/preorderlists", controller.CreatePreorder)
+						protected.PATCH("/preorderlists", controller.UpdatePreorder)
+						protected.DELETE("/preorderlists/:id", controller.DeletePreorder)
 
 						// Status Routes
 						protected.GET("/statuss", controller.ListStatuss)
@@ -40,12 +40,12 @@ func main() {
 						protected.DELETE("/statuss/:id", controller.DeleteStatus)
 
 						// Order Routes
-						protected.GET("/order_lists/:id", controller.ListOrders)
-						protected.GET("/order_lists", controller.ListOrder)
+						protected.GET("/order_s/:id", controller.ListOrders)
+						protected.GET("/order_s", controller.ListOrder)
 						protected.GET("/order/:id", controller.GetOrder)
-						protected.POST("/order_lists", controller.CreateOrder)
-						protected.PATCH("/order_lists", controller.UpdateOrder)
-						protected.DELETE("/order_lists/:id", controller.DeleteOrder)
+						protected.POST("/order_s", controller.CreateOrder)
+						protected.PATCH("/order_s", controller.UpdateOrder)
+						protected.DELETE("/order_s/:id", controller.DeleteOrder)
 
 				}
 		}
